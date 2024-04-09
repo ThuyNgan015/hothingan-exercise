@@ -5,6 +5,8 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Person; 
+use App\Models\Post;
+use App\Models\Student;
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -19,6 +21,7 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         Person::factory()->count(20)->create();
-        
+        Post::factory()->count(10)->create();
+        Student::factory()->count(25)->create();
     }
 }
